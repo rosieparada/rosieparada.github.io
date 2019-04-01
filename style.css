@@ -7,27 +7,33 @@ body{
     font-family: 'Aleo',serif;
 }
 #header{
+	width:100%;
+    position:fixed;
+    top:0px;
     background-color:#024873;
+	text-align:center;
     color:white;
     height: 100px;
     border-bottom: 6px solid #0367a6;
+	padding-bottom:30px;
 }
 
 .nav{
     max-width: 1023px;
     margin: auto;
-    display:grid;
-    grid-template-columns: 200px auto;
+	padding-top:25px;
+    /*display:grid;
+    grid-template-columns: 200px auto;*/
 }
 .logo{
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 	font-family: 'Fredoka One', cursive;
 	color:#d5eaf2;
 	font-size: 1.4rem;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 .links{
-    text-align: right;
+    /*text-align: center; right*/
     margin-top: 40px;
     font-size: 0.75rem;
     color:#d5eaf2;
@@ -49,7 +55,7 @@ body{
 #banner img{
     width: 100%;
 }
-#banner > div{
+/*#banner > div{
 	position: absolute;
 	top:49px;
 	left: 29px;
@@ -58,7 +64,7 @@ body{
 	font-weight:bold;
 	color: white;
 }
-
+*/
 #aboutme{
 	background-color: #A7CFF2;
 	max-width: 1013px;
