@@ -1,63 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="=en">
     <head>
-<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <style>
-            html{
-                scroll-behavioe: smooth;
-            }
-            #nav{
-                position: fixed;
-                background-color: white;
-                width: 100%;
-                padding: 10px;
-                top:0;
-            }
-            h1{
-                padding-top: 50px;
-            }
-        </style>
-
+        <meta charset="utf-8"/>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        
+        <title>Rosie Parada Photography</title>
+        
+        <link rel="stylesheet" href="style.css"/>
     </head>
-<body>
-    <div id="nav">
-    <a href="#">Top</a>
-    <a href="#cricket">Cricket</a>
-    <a href="#rugby"> Rugby</a>
-    <a href="#soccer">Soccer </a>
     
-    </div>
-<div>It works!</div>
-    <div>
-    <a data-fancybox="gallery" href="img.files/big_1.jpg"><img src="img.files/small_1.jpg"></a>
-    <a data-fancybox="gallery" href="img.files/big_2.jpg"><img src="img.files/small_2.jpg"></a>
-    <a data-fancybox="gallery" href="img.files/big_3.jpg"><img src="img.files/small_3.jpg"></a>
-    <a data-fancybox="gallery" href="img.files/big_4.jpg"><img src="img.files/small_4.jpg"></a>
-    <a data-fancybox="gallery" href="img.files/big_5.jpg"><img src="img.files/small_5.jpg"></a>
-    </div>
-    <h1 id="cricket">CRICKET</h1>
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
- 
-    <h1 id="rugby">Rugby</h1>
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-   
-    <h1 id="soccer">Soccer</h1>
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    blah blah <br />blah blah <br />blah blah <br />blah blah <br />blah blah <br />
-    <h1>Rugby</h1>
+    <body>
+        <div id="header">
+            <div class="nav">
+                <div class="logo">ROSIE PARADA PHOTOGRAPHY</div>
+                    <div class="links">
+                        <a href="#">HOME</a> 
+                        &bull;
+                        <a href="#about">ABOUT ME</a>
+                        &#8226;
+                        <a href="#portfolio">PORTFOLIO</a>
+                        &#8226;
+                        <a href="#contactme">CONTACT ME</a>
+                        &#8226;
+                        <a href="#socialmedia">SOCIAL MEDIA</a>
+                    </div>
+                </div>
+        </div>
+		
+        <div id="banner">
+			<img src="images/banner.jpg"/>
+			<div>“What I like about photographs is <br>that they capture a moment that’s gone forever, impossible to reproduce.”
+			</div>
+        </div>
+		
+        <div id="aboutme">
+			<h1 id="about">About Me</h1>
+            
+            <div class="span_aboutme">
+                
+                <div>
+                    <p>I am a landscape and adventure photographer.
+                    Born in El Salvador, I am a System Engenieer who always enjoy photography as one of my hobbies.<br/>
+                    I have traveled to New Zealand with my husband, and I have started my passion in my carreer.
+                    I enjoy traveling around New Zealand, I love the beaches because remain me my root and my culture. 
+                    I also love take photos of people. I love to capture special moments and made them unforgettable.<br/>
+                    I am studying a Bachelor of Design in Massey University. I am going to finish this carreer in 2022.</p>
+                </div>
+                
+                <div class="photo">
+                    <img src="images/aboutme.jpg" />
+                </div>
+			</div>
+            
+            
+		</div>
+        
+		<div id="myportfolio">
+			<h1 id="portfolio">My Portfolio</h1>
+            <div class="square_photos">
+                <a data-fancybox="gallery" href="images/small_mihimihi1.jpg"><img src="images/mihimihi1.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi2.jpg"><img src="images/mihimihi2.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi3.jpg"><img src="images/mihimihi3.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi5.jpg"><img src="images/mihimihi5.jpg"/></a>
+            </div>
+		</div>
+		
+		<div id="contactme">
+			<h1 id="contactme">Contact Me</h1>
+			<div class="contact">
+                <p>Email: rosadelcarmen@gmail.com</p>
+                <p>Address: 173 Onepu Rd, Lyall Bay, Wellington 6022</p>
+                <p>Mobile Phone: 021 022 77480</p>
+            </div>
+		</div>
+		 <div id="socialmedia"><h1 id="socialmedia">Social Media</h1></div>
+        <div id="footer">Copyright Rosie Parada 2019</div>
+
+    </body>
     
-</body>
 </html>
