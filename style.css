@@ -11,7 +11,7 @@ body {
 }
 h1 {
 /* offset to accommodate fixed nav */
-padding-top: 50px;
+padding-top: 90px;
 }
 #header{
 	width:100%;
