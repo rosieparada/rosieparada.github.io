@@ -73,6 +73,10 @@ padding-top: 75px;
 	color: white;
 }
 */
+#banner .mySlides {
+	display:none;
+}
+
 #aboutme{
 	background-color: #A7CFF2;
 	max-width: 1013px;
