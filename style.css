@@ -67,7 +67,7 @@ h1 {
 #banner img{
     width: 100%;
 }
-/*#banner > div{
+.messageBanner{
 	position: absolute;
 	top:49px;
 	left: 29px;
@@ -76,7 +76,7 @@ h1 {
 	font-weight:bold;
 	color: white;
 }
-*/
+
 #banner .mySlides {
 	display:none;
 }
@@ -116,6 +116,7 @@ h1 {
 	border-bottom: 6px solid #fff;
 }
 .paragraph{
+	margin-left:20px;
 	margin-bottom:20px;
 }
 .paragraphAboutme {
@@ -145,6 +146,7 @@ h1 {
 	padding-top: 10px;
     padding-bottom: 20px;
     color:white;
+	font-family: 'Libre Franklin', sans-serif;
 
 }
 #contactme .contact{
@@ -152,13 +154,21 @@ h1 {
     border-bottom-style: solid 1px;	
 	display:grid;
 	grid-template-columns: 1fr 1fr;
+	border: 3px solid white; 
+	margin:15px; 
+	padding:10px;
+	word-spacing:1px; 
+	line-height:1.6;
 }
 
 #contactme .iconos{
 	width:80px;
 	height:80px;
+	margin-left:10px;
+	padding-top:55px;
 	padding-left:30px;
 	decoration:none;
+	text-align:center;
 }
 #footer{
 	background-color:#024873;
