@@ -40,6 +40,7 @@ h1 {
 	color:#d5eaf2;
 	font-size: 1.4rem;
     padding-left: 10px;
+	text-decoration: none;
 }
 .logo2{
 	font-size: 1.0rem;
@@ -58,7 +59,6 @@ h1 {
 }
 
 #banner{
-	/*position: relative;*/
     max-width: 1023px;
     margin-left: auto;
     margin-right: auto;
