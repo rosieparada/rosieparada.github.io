@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8"/>
+		 <title>Central Perk</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="css/style_web.css">
+		 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+		 <link rel="stylesheet" href="css/style.css"/>
+		</head>
+	<body>
+	<div class="container">
+	<!-- Header - menu -->
+		        <div class="row">
+				                <div class="col-lg-4 col-xs-6 nav"><img class="logo1" src="img/logo1.png"/></div>
+								<div class="col-lg-8 col-xs-6  menu">
+									<div class="topnav" id="myTopnav">
+									  <a href="about.html" class="active">About &#8226;</a>
+									  <a href="reservations.html">Reservations &#8226;</a>
+									  <a href="menus.html">Menus &#8226;</a>
+									  <a href="shop.html">Shop &#8226;</a>
+									  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									  <i class="fa fa-bars"></i>
+									  </a>
+									</div>								
+								</div>
+                </div>
+	<!-- Menus body -->			
+				<div class="row">
+						<h2>Shop</h2>
+			    </div>
+		<article class="container">
+			<div class="row">	
+				<div col-lg-3><span class="shop">Beautiful coffee mug delivered directly to your door.</span>
+			    </div>
+			</div>
+			<div class="row">	
+                <div class="col-lg-6"><img src="img/blackmug.jpg"></div>
+                <div class="col-lg-6 description">Friends Central Perk Latte Black Coffee Mug. <br/>
+					Price S26.99 <br/>
+					<p class="despcription">Perk up your morning routine with the Friends Central Perk Latte Mug. 
+					You'll never tire of a good cup of coffee from the Friends local hang out. <br/>
+					With the Central Perk logo on the 24 ounce mug, everyone will know you’re still a fan of the NBC hit show Friends.
+					</p>
+				</div>
+			</div>
+			<div class="row">	
+                <div class="col-lg-6"><img src="img/whitemug.jpg"></div>
+                <div class="col-lg-6 description">Friends Central Perk Latte White Coffee Mug.<br/>
+					Price S26.99 <br/>
+					<p class="despcription">Perk up your morning routine with the Friends Central Perk Latte Mug. 
+					You'll never tire of a good cup of coffee from the Friends local hang out. <br/>
+					With the Central Perk logo on the 24 ounce mug, everyone will know you’re still a fan of the NBC hit show Friends.
+					</p>
+				</div>
+			</div>			
+		</article>
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+				
+     <!-- Footer- menu -->          
+				<div class="row">
+					<div class="col-lg-12 footer">© 2019 CENTRAL PERK. ALL RIGHTS RESERVED.</br></div>
+                </div>
+				
+				
+	</div>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
+	</body>
+</html>

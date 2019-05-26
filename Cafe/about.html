@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8"/>
+		 <title>Central Perk</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="css/style_web.css">
+		 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+		 <link rel="stylesheet" href="css/style.css"/>
+		</head>
+	<body>
+	<div class="container">
+	<!-- Header - menu -->
+		        <div class="row">
+				                <div class="col-lg-4 col-xs-6 nav"><img class="logo1" src="img/logo1.png"/></div>
+								<div class="col-lg-8 col-xs-6  menu">
+									<div class="topnav" id="myTopnav">
+									  <a href="about.html" class="active">About &#8226;</a>
+									  <a href="reservations.html">Reservations &#8226;</a>
+									  <a href="menus.html">Menus &#8226;</a>
+									  <a href="shop.html">Shop &#8226;</a>
+									  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									  <i class="fa fa-bars"></i>
+									  </a>
+									</div>								
+								</div>
+                </div>
+	<!-- About body -->			
+				<div class="row">
+					<h2>About</h2>  
+			    </div>
+		<article class="container">
+			<div class="row">
+				<div class="section-about">
+					<article>	
+						<p>Located on a vibrant pedestrianised market street, 
+Central Perk is a bright and airy space with glazed frontage on two sides and an outside terrace on the market.
+Serving our signature well-travelled breakfast and all day food and drinks menus, along with our freshly roasted coffee from the Caravan roastery, 
+our style is open, relaxed and friendly. Come down for a coffee with the morning paper, a cocktail and small plates in the evening and anything in between!</p>
+					</article>
+				</div>
+				<div class="w3-content w3-display-container">
+					  <img class="mySlides" src="img/Central-Perk-coffee-shop-on-TV-show-Friends.jpg" style="width:100%">
+					  <img class="mySlides" src="img/Central-Perk-on-TV-Show-Friends1.jpg" style="width:100%">
+					  <img class="mySlides" src="img/Central-Perk-on-TV-Show-Friends-2.jpg" style="width:100%">
+
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>					  
+				</div>
+			</div>
+		</article>
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+				
+     <!-- Footer- menu -->          
+				<div class="row">
+					<div class="col-lg-12 footer">© 2019 CENTRAL PERK. ALL RIGHTS RESERVED.</br>
+                </div>
+				
+				
+	</div>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
+	</body>
+</html>

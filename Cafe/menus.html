@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8"/>
+		 <title>Central Perk</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+		 <link rel="stylesheet" href="css/style.css"/>
+		</head>
+	<body>
+	<div class="container">
+	<!-- Header - menu -->
+		        <div class="row">
+				                <div class="col-lg-4 col-xs-6 nav"><img class="logo1" src="img/logo1.png"/></div>
+								<div class="col-lg-8 col-xs-6  menu">
+									<div class="topnav" id="myTopnav">
+									  <a href="about.html" class="active">About &#8226;</a>
+									  <a href="reservations.html">Reservations &#8226;</a>
+									  <a href="menus.html">Menus &#8226;</a>
+									  <a href="shop.html">Shop &#8226;</a>
+									  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									  <i class="fa fa-bars"></i>
+									  </a>
+									</div>								
+								</div>
+                </div>
+    
+	<!-- Menus body -->			
+				<div class="row">
+					<h2>Menus</h2>
+			    </div>
+		<article class="container">
+			<div class="row">
+				<article class="menusfood">	
+					<ul class="list-inline">
+						<li><a class="w3-button demo" onclick="currentDiv(1)" href="#">Breakfast</a></li>
+						<li><a class="w3-button demo" onclick="currentDiv(2)" href="#">All day</a></li>
+						<li><a class="w3-button demo" onclick="currentDiv(3)" href="#">Brunch</a></li>
+						<li><a class="w3-button demo" onclick="currentDiv(4)" href="#">Pudding</a></li>
+						<li><a class="w3-button demo" onclick="currentDiv(5)" href="#">Drinks</a></li>
+						<li><a class="w3-button demo" onclick="currentDiv(6)" href="#">Hire + Events</a></li>
+					</ul>
+				</article>
+				<div class="note">
+					<p><small>Breakfast menu: 8am - 11.30am, Mon-Fri. All day menu: 12noon - 10.30pm, Mon-Fri &amp; Sat from 5pm. Brunch menu: 9am - 4pm, Sat &amp; Sun.</small></p>		
+				</div>
+				
+				<div class="w3-container">
+
+					<div class="w3-content" style="max-width:800px">
+					  <img class="mySlides" src="img/breakfast.jpg" style="width:100%">
+					  <img class="mySlides" src="img/coffeeTable.jpg" style="width:100%">
+					  <img class="mySlides" src="img/brunch.jpg" style="width:100%">
+					  <img class="mySlides" src="img/puddin.jpg" style="width:100%">
+					  <img class="mySlides" src="img/drinks.jpg" style="width:100%">
+					  <img class="mySlides" src="img/events.jpg" style="width:100%">
+					</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function currentDiv(n) {
+						  showDivs(slideIndex = n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("demo");
+						  if (n > x.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" w3-red", "");
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " w3-red";
+						}
+					</script>
+			</div>
+		</article>
+
+				
+     <!-- Footer- menu -->          
+				<div class="row">
+					<div class="col-lg-12 footer">© 2019 CENTRAL PERK. ALL RIGHTS RESERVED.</br></div>
+                </div>
+				
+				
+	</div>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
+	</body>
+</html>
